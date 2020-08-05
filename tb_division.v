@@ -4,13 +4,11 @@ module tb_division;
 
 //Outputs
  wire[7:0] DIV_Out;
- wire CarryOut;
  
 //calling DIVISION.v
  division tb(
             A,B,  // div 8-bit Inputs
-            DIV_Out, // 8-bit QUOTIENT
-            CarryOut // Carry Out Flag
+            DIV_Out // 8-bit QUOTIENT
      );
     initial
     begin

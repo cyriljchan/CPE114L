@@ -4,13 +4,11 @@ module tb_multiplication;
 
 //Outputs
  wire[7:0] MUL_Out;
- wire CarryOut;
  
 //calling MULTIPLICATION.v
  multiplication tb(
             A,B,  // multiply 8-bit Inputs
-            MUL_Out, // 8-bit PRODUCT
-            CarryOut // Carry Out Flag
+            MUL_Out // 8-bit PRODUCT
      );
     initial
     begin

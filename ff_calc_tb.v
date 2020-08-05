@@ -5,14 +5,13 @@ module tb_alu;
 
 //Outputs
  wire[7:0] ALU_Out;
- wire CarryOut;
- // Verilog code for ALU
+
+ // ff_calc_tb Verilog
  integer i;
  alu test_unit(
-            A,B,  // ALU 8-bit Inputs                 
-            ALU_Sel,// ALU Selection
-            ALU_Out, // ALU 8-bit Output
-            CarryOut // Carry Out Flag
+            A,B,  // 8-bit Inputs                 
+            ALU_Sel,// Selection
+            ALU_Out // 8-bit Output
      );
     initial 
     begin
@@ -20,7 +19,7 @@ module tb_alu;
       B = 4'h02;
       ALU_Sel = 4'b0000;
       
-      for (i=0;i<=3;i=i+1)
+      for (i=0;i<=4;i=i+1)
       begin
        ALU_Sel = ALU_Sel + 4'b0001;
        #20;

@@ -4,13 +4,11 @@ module tb_addition;
 
 //Outputs
  wire[7:0] ADD_Out;
- wire CarryOut;
  
 //calling ADDITION.v
  addition tb(
             A,B,  // add 8-bit Inputs
-            ADD_Out, // 8-bit SUM
-            CarryOut // Carry Out Flag
+            ADD_Out // 8-bit SUM
      );
     initial
     begin

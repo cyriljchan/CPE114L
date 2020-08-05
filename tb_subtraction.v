@@ -4,13 +4,11 @@ module tb_subraction;
 
 //Outputs
  wire[7:0] SUB_Out;
- wire CarryOut;
  
 //calling SUBTRACTION.v
  subtraction tb(
             A,B,  // subtract 8-bit Inputs
-            SUB_Out, // 8-bit DIFFERENCE
-            CarryOut // Carry Out Flag
+            SUB_Out // 8-bit DIFFERENCE
      );
     initial
     begin
