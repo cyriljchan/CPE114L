@@ -1,2 +1,2 @@
 # CPE114L
-Introduction to HDL Programming (huh)
+Introduction to HDL Programming
